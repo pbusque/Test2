@@ -62,11 +62,9 @@ public class MainActivity extends AppCompatActivity {
                 button3 = (RadioButton) findViewById(selectedId2);
                 mensahe1= findViewById(R.id.mensahe);
 
-//                Toast.makeText(MainActivity.this,
-//                        button4.getText(), Toast.LENGTH_SHORT).show();
 
                 AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(MainActivity.this);
-                alertDialogBuilder.setMessage("Size:" +button4+ "\n" + "Flavor:" + button2+"\n"+"Toppings:"+button3+"\n"+ "Message:"+mensahe1);
+                alertDialogBuilder.setMessage("Size:" +button4.getText().toString()+ "\n" + "Flavor:" + button2.getText().toString()+"\n"+"Toppings:"+button3.getText().toString()+"\n"+ "Message:"+mensahe1.getText().toString());
                 alertDialogBuilder.setPositiveButton("close", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -74,8 +72,9 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
                 AlertDialog alertDialog = alertDialogBuilder.create();
+                ;
                 alertDialog.show();
-                alertDialog.getWindow().getAttributes();
+              alertDialog.getWindow().getAttributes();
             }
         });
 

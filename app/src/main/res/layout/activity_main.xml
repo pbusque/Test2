@@ -65,35 +65,6 @@
             android:layout_height="108dp"
             android:layout_alignParentRight="true"
             android:src="@drawable/square" />
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="88dp"
-                android:layout_height="23dp"
-                android:layout_below="@+id/roundd"
-                android:layout_marginLeft="25dp"
-                android:gravity="center"
-                android:text="Round Cake"
-                android:textColor="#000000" />
-
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="78dp"
-                android:layout_height="24dp"
-                android:layout_below="@+id/rolll"
-                android:layout_marginLeft="165dp"
-                android:text="Roll Cake"
-                android:textAlignment="center"
-                android:textColor="#000000" />
-
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="82dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/rolll"
-                android:layout_marginLeft="300dp"
-                android:text="Square Cake"
-                android:textAlignment="center"
-                android:textColor="#000000" />
 
 
             <RadioGroup
@@ -106,9 +77,10 @@
 
                 <RadioButton
                     android:id="@+id/round"
+                    android:text="Round"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="55dp"
+                    android:layout_marginLeft="25dp"
                     tools:layout_editor_absoluteX="60dp"
                     tools:layout_editor_absoluteY="242dp" />
 
@@ -116,16 +88,17 @@
                     android:id="@+id/roll"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="98dp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Roll"
                     tools:layout_editor_absoluteX="189dp"
                     tools:layout_editor_absoluteY="244dp" />
 
                 <RadioButton
-
+                    android:text="Square"
                     android:id="@+id/square"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="105dp"
+                    android:layout_marginLeft="55dp"
                     tools:layout_editor_absoluteX="298dp"
                     tools:layout_editor_absoluteY="244dp" />
             </RadioGroup>
@@ -156,6 +129,7 @@
                 android:orientation="horizontal">
 
                 <RadioButton
+
                     android:id="@+id/dd"
                     android:layout_width="121dp"
                     android:layout_height="40dp"
