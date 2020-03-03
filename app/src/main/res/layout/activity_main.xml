@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:orientation="vertical"
+        android:weightSum="3.5">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight=".4">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:text="ORDERING APP"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="40sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/siz"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1.2">
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:background="#FF0606"
+            android:text="Select Size of Cake"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/roundd"
+            android:layout_width="136dp"
+            android:layout_height="108dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/round" />
+
+        <ImageView
+            android:id="@+id/rolll"
+            android:layout_width="133dp"
+            android:layout_height="108dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/brasodemercedes1" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="125dp"
+            android:layout_height="108dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/square" />
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="88dp"
+                android:layout_height="23dp"
+                android:layout_below="@+id/roundd"
+                android:layout_marginLeft="25dp"
+                android:gravity="center"
+                android:text="Round Cake"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="78dp"
+                android:layout_height="24dp"
+                android:layout_below="@+id/rolll"
+                android:layout_marginLeft="165dp"
+                android:text="Roll Cake"
+                android:textAlignment="center"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="82dp"
+                android:layout_height="25dp"
+                android:layout_below="@+id/rolll"
+                android:layout_marginLeft="300dp"
+                android:text="Square Cake"
+                android:textAlignment="center"
+                android:textColor="#000000" />
+
+
+            <RadioGroup
+                android:id="@+id/size"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/rolll"
+                android:layout_marginTop="23dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/round"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55dp"
+                    tools:layout_editor_absoluteX="60dp"
+                    tools:layout_editor_absoluteY="242dp" />
+
+                <RadioButton
+                    android:id="@+id/roll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="98dp"
+                    tools:layout_editor_absoluteX="189dp"
+                    tools:layout_editor_absoluteY="244dp" />
+
+                <RadioButton
+
+                    android:id="@+id/square"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="105dp"
+                    tools:layout_editor_absoluteX="298dp"
+                    tools:layout_editor_absoluteY="244dp" />
+            </RadioGroup>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FF0606"
+            android:text="SELECT FLAVOR"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"/>
+
+            <RadioGroup
+                android:layout_below="@+id/textView6"
+                android:id="@+id/flavor"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/dd"
+                    android:layout_width="121dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="Chocolate"
+                    android:textAlignment="center"
+                    />
+
+                <RadioButton
+                    android:id="@+id/bf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Black Forest"
+                    tools:layout_editor_absoluteX="142dp"
+                    tools:layout_editor_absoluteY="336dp" />
+
+                <RadioButton
+
+                    android:id="@+id/van"
+                    android:layout_width="88dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Vanila"
+                    tools:layout_editor_absoluteX="274dp"
+                    tools:layout_editor_absoluteY="336dp" />
+            </RadioGroup>
+        </RelativeLayout>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".5">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+            <TextView
+
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FF0000"
+                android:text="Select Toppings"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+                <RadioGroup
+                    android:layout_below="@id/textView7"
+                    android:id="@+id/toppings"
+                    android:layout_height="50dp"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/kisses"
+                        android:layout_width="106dp"
+                        android:layout_height="37dp"
+                        android:layout_marginLeft="25dp"
+                        android:background="#FFFFFF"
+                        android:text="Kisses"
+                        />
+
+                    <RadioButton
+
+                        android:id="@+id/pearls"
+                        android:layout_width="106dp"
+                        android:layout_height="37dp"
+                        android:layout_marginLeft="15dp"
+                        android:text="Pearls"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/chili"
+                        android:layout_width="130dp"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Chilimansi"/>
+                </RadioGroup>
+
+            </RelativeLayout>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/mensahe"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="Enter Message"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5">
+        <Button
+            android:id="@+id/button_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:hint="Enter Message"
+            android:layout_marginLeft="150dp"/>
+    </LinearLayout>
+
+</LinearLayout>
